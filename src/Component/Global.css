@@ -46,6 +46,7 @@
  
 .image_section {
   border-radius: 20px;
+  mix-blend-mode: screen;
 }
 
 .image_section_container {
@@ -192,8 +193,8 @@
 }
 
 .profile_summary {
-  color: #3C3C3C;
+  color: #686464;
 }
 /* dummy css */
-
+ 
  
