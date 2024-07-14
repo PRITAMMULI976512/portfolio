@@ -1,0 +1,199 @@
+/* Navbar.css */
+.navbar-nav {
+  margin-left: auto; /* Aligns the navbar items to the right */
+}
+
+.nav-item {
+  margin-left: 20px; /* Adjust spacing between menu items as needed */
+}
+
+.appcontainer {
+  min-height: 700px;
+  background-color: #070502;
+  max-height: fit-content;
+  color: #fff;
+}
+
+.intro {
+    color: #fff;
+    padding-top: 150px;
+    padding-left: 20px;
+    min-height: 500px;
+}
+
+.intro h1 {
+    color: #ffff00;
+    letter-spacing: 10px;
+}
+
+.intro h1:before{
+  content: "";
+  position: absolute;
+  top: 40%;
+  width: 0;
+  height: 2px;
+  border-bottom: 2px solid #ffff00;
+  transition: all 0.2s linear 
+}
+
+.intro h1:hover::before {
+  width: 25%;
+}
+
+.intro h1:hover {
+    cursor: pointer;
+}
+ 
+.image_section {
+  border-radius: 20px;
+}
+
+.image_section_container {
+  text-align: center;
+  margin: auto;   
+}
+
+.nav-link:before{
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  border-bottom: 2px solid #4458dc;
+  transition: all 0.2s linear 
+}
+
+.nav-link:hover::before {
+  width: 5%;
+}
+
+.about {
+   width: 10%;
+}
+.about:before {
+  content: "";
+  position: absolute;
+  top: 86%;
+  border-bottom: 2px solid #4458dc;
+  transition: all 0.2s linear;
+  width: 0;
+}
+
+.about:hover::before {
+  width: 8%;
+}
+
+.skills {
+  width: 20%;
+  padding-bottom: 20px;
+}
+
+.skills:before {
+  content: "";
+  position: absolute;
+  top: 150%;
+  border-bottom: 2px solid #4458dc;
+  transition: all 0.2s linear;
+  width: 0;
+  margin-bottom: 50px;
+}
+
+.skills:hover::before {
+  width: 12%;
+ }
+
+.skills:hover {
+  cursor: pointer;
+}
+
+.profile_photo {
+  width: 90%;
+  border-radius: 10px;
+}
+
+.progress {
+  width: 70%;
+}
+
+.description {
+  color: #42433A;
+}
+
+.skills_tab {
+  color: #9B9B9C;
+}
+
+.skills_heading {
+  color: #e33267;
+}
+
+.skills_description {
+  color: #605E5C;
+}
+
+.skills_card {
+  background-color: #262626;
+}
+
+.skills_image {
+   min-height: 250px;
+  max-height: 250px;
+}
+.skills_card_title {
+  color: #fff;
+  text-align: center;
+}
+
+.ecommerse_image{
+   width: 100%;
+   border-radius: 20px;
+}
+
+.profile_name {
+   letter-spacing: 10px;
+  padding-top: 30px;
+  color: #B7822F;
+}
+
+.resume_profile_photo {
+  border-radius: 160px;
+  width: 80%;
+}
+
+.contact_icons {
+  color: #B7822F;
+}
+.resume_profile_photo_component {
+  padding-top: 30px;
+  text-align: end;
+}
+
+.resume_intro {
+  padding: 10px;
+  border: 2px solid #ffff00;
+  border-radius: 20px;
+  margin-top: 10px;
+  min-height: 500px;
+}
+
+.intro_finish {
+  border-bottom: 5px solid #7E7E7E;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 1%;
+}
+
+.profile_intro h1 {
+  color: #6F5E3A;
+}
+.profile_intro {
+  text-align: end;
+  margin-top: 10px;
+}
+
+.profile_summary {
+  color: #3C3C3C;
+}
+/* dummy css */
+
+ 
