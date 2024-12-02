@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import NAvbsr from "./NAvbsr";
-import photo from "./images/photo.png";
+import photo from "./images/photo.webp";
 import About from "./About";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -15,6 +15,7 @@ function Home() {
     console.log(width);
   };
   useEffect(() => {
+    console.log("runn")
     widthScreen();
   }, [widthofscreen]);
 

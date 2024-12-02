@@ -45,8 +45,9 @@
 }
  
 .image_section {
-  border-radius: 20px;
+  border-radius: 200px;
   mix-blend-mode: screen;
+  height: 350px;
 }
 
 .image_section_container {
@@ -108,7 +109,8 @@
 }
 
 .profile_photo {
-  width: 90%;
+  width: 80%;
+  height: 500px;
   border-radius: 10px;
 }
 
@@ -120,10 +122,41 @@
   color: #42433A;
 }
 
+/* .about { */
+  /* width: 10%;
+}
+.about:before {
+ content: "";
+ position: absolute;
+ top: 86%;
+ border-bottom: 2px solid #4458dc;
+ transition: all 0.2s linear;
+ width: 0;
+} */
+
+.about:hover::before {
+ width: 8%;
+}
 .skills_tab {
-  color: #9B9B9C;
+  width: 10%;
+  color: #9B9B9C; 
 }
 
+.skills_tab::before {
+  content: "";
+  position: absolute;
+  top: 105%;
+  border-bottom: 2px solid #4458dc;
+  transition: all 0.2s linear;
+  width: 0;
+}
+
+.skills_tab:hover {
+  cursor: pointer;
+}
+.skills_tab:hover::before {
+  width: 6%;
+}
 .skills_heading {
   color: #e33267;
 }
@@ -195,6 +228,4 @@
 .profile_summary {
   color: #686464;
 }
-/* dummy css */
- 
  

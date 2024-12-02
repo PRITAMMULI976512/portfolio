@@ -5,11 +5,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Component/Home";
 import Projects from "./Component/Projects";
 import Resume from "./Component/Resume";
-
+import { useTranslation } from "react-i18next";
+ 
 function App() {
+  const {t} = useTranslation()
   return (
     <>
-      <div className="appcontainer">
+       <div className="appcontainer">
         <div className="container">
           <Router>
             <Routes>

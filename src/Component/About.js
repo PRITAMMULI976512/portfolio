@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import photo from "./images/photo.png";
- import Skills from "./Skills"
+import photo from "./images/about_photo.webp";
+import Skills from "./Skills";
 function About() {
   const [skills, setSkills] = useState(false);
   const [experience, setExperience] = useState(false);
@@ -31,7 +31,7 @@ function About() {
         <div className="col-lg-8 col-md-8 col-sm-8">
           <h1 className="about">About</h1>
           <h6 className="description">
-            With over 2.5 years of experience working in Tata Consultancy
+            With over 3 years of experience working in Tata Consultancy
             Services, I am a skilled front-end developer proficient in HTML,
             CSS, ReactJS, JavaScript, React Native, and Redux. I have a strong
             understanding of version control systems like GitHub and project
@@ -80,48 +80,52 @@ function About() {
             {experience == true ? (
               <div className="experience_section">
                 <h6 className="skills_heading mt-3">
-                  Assistant System Engineer | Tata Consultancy Services
-                </h6>
+                  Assistant System Engineer | Tata Consultancy Services                  (Dec-2021 - present) <br />
+                </h6> <hr /><hr />
                 <p className="skills_description">
-                  Dec-2021 - present <br />
+
+                  <details>
+                    <summary>
+                      {" "}
+                      MERN Stack Developer (Dec 2023 - Present)
+                    </summary>
+
+                    <ul>
+                      <li>
+                        Proficient in MERN Stack, including MongoDB and SQL
+                        databases.{" "}
+                      </li>{" "}
+                      <li>
+                        Skilled API implementation using JavaScript and adept at
+                        utilizing CSS frameworks for design consistency.
+                      </li>
+                      <li>
+                        Extensive experience in version control with GitHub and
+                        creating reusable components in ReactJS.{" "}
+                      </li>{" "}
+                      <li>Uses AWS for deployment purpose.</li>
+                    </ul>
+                  </details> <hr />
                   <details>
                     <summary>
                       Internet of Things Digital Engineering | Front-end
-                      developer - ReactJS
+                      developer - ReactJS (Dec 2021 - Dec 2023)
                     </summary>
                     <ul>
                       <li>
-                        Developed and maintained user interface for web
-                        applications, ensuring optimal performance and
-                        responsiveness.
+                        Developed user-friendly interfaces for a banking web
+                        application using React and JavaScript.
                       </li>
                       <li>
-                        Collaborated with backend developers and designers to
-                        implement visual elements and user interactions.
-                      </li>
+                        Integrated APIs and optimized UI/UX for enhanced
+                        performance.
+                      </li>{" "}
                       <li>
-                        Utilized React.js to create reusable components,
-                        enhancing code maintainability and scalability.
-                      </li>
+                        Collaborated with teams to deliver improvements on time.
+                      </li>{" "}
                       <li>
-                        Implemented responsive design principle to ensure a
-                        seamless user experience across various devices
-                      </li>
-                      <li>
-                        Collaborated with UI/UX designers to implement design
-                        specifications and enhance user experience.
-                      </li>
-                      <li>
-                        Integrated third party APIs to extend application
-                        functionality and improve overall performance.{" "}
-                      </li>
-                      <li>
-                        Participated in agile development processes, including
-                        sprint planning and daily stand-up meetings
-                      </li>
-                      <li>
-                        Resolve cross-browser compatibility issue and optimized
-                        web applications for speed and performance.
+                        Proficient in using firebase for deploying and managing
+                        CRUD application.
                       </li>
                     </ul>
                   </details>
@@ -132,24 +136,26 @@ function About() {
               <div className="education_section">
                 <h6 className="skills_heading mt-3">B-Tech Graduate</h6>
                 <p className="skills_description">
-                  Electronics and Telecommunication Engineering | 7.1 <br /> Shri Guru gobind Singh Ji Instiute of Engineering and Technology <br /> Nanded, 431606
+                  Electronics and Telecommunication Engineering | 7.1 <br />{" "}
+                  Shri Guru gobind Singh Ji Instiute of Engineering and
+                  Technology <br /> Nanded, 431606
                 </p>
                 <h6 className="skills_heading mt-3">HSC</h6>
                 <p className="skills_description">
-                  Science | 71.85 <br /> Kulbhushan Jr. college <br /> Aurangabad, 431001
+                  Science | 71.85 <br /> Kulbhushan Jr. college <br />{" "}
+                  Aurangabad, 431001
                   <h6 className="skills_heading mt-3">SSC</h6>
-                <p className="skills_description">
-                  Saraswati Bhuvan Prashala | 90.20 <br /> Aurangabad, 431001
+                  <p className="skills_description">
+                    Saraswati Bhuvan Prashala | 90.20 <br /> Aurangabad, 431001
+                  </p>
                 </p>
-                </p>
-
               </div>
             ) : null}
           </div>
         </div>
       </div>
 
- <Skills />
+      <Skills />
     </>
   );
 }

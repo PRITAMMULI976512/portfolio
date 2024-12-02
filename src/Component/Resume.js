@@ -1,10 +1,10 @@
 import React from "react";
 import NAvbsr from "./NAvbsr";
-import photo from "./images/photo.png";
+import photo from "./images/photo.webp";
 import EditLocationIcon from "@mui/icons-material/EditLocation";
 import CallIcon from "@mui/icons-material/Call";
 import AttachEmailIcon from "@mui/icons-material/AttachEmail";
-import parrot from "./images/parr1.jpeg"
+ 
 function Resume() {
   return (
     <>
