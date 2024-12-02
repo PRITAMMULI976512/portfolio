@@ -19,7 +19,7 @@ function Resume() {
             <h1 className="profile_name">PRITAM MULI</h1>
             <div className="row">
               <div className="col-lg-6 col-md-6 col-sm-12 mb-3">
-                <CallIcon className="contact_icons" /> +91 9765129019
+              <a href="tel: +91 9765129019" title="Contact us" className="maillink"> <CallIcon className="contact_icons" />+91 9765129019</a>
               </div>
               <div className="col-lg-6  col-md-6 col-sm-12">
                 <EditLocationIcon className="contact_icons" /> Garakheda parisar
@@ -27,7 +27,7 @@ function Resume() {
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12">
                 <AttachEmailIcon className="contact_icons" />{" "}
-                muli.pritam@gmail.com
+                <a href="mailto:muli.pritam@gmail.com" className="maillink" title="Contact tjrough mail">muli.pritam@gmail.com </a>   
               </div>
             </div>
           </div>{" "}
