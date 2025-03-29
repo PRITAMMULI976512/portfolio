@@ -5,21 +5,13 @@ import About from "./About";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Home() {
-  const [widthofscreen, setWidthofscreen] = useState();
-  const widthScreen = () => {
-    let width = window.screen.width;
-    setWidthofscreen(width);
-    console.log(width);
-  };
-  useEffect(() => {
-    console.log("runn")
-    widthScreen();
-  }, [widthofscreen]);
-
-  console.log(widthofscreen);
+  
+ 
+const navigate = useNavigate();
+ 
   return (
     <>
       <NAvbsr />
@@ -49,7 +41,7 @@ function Home() {
 
             <div className="col-lg-1 col-md-1 col-sm-1 col-1">
               <Link
-                to="https://github.com/PRITAMMULI"
+                to="https://github.com/PRITAMMULI9765"
                 target="_blank"
               >
                 <GitHubIcon className="contact_icons" />
@@ -58,9 +50,10 @@ function Home() {
           </div>
         </div>
         <div className="col-lg-6 col-md-6 col-sm-6 col-12 image_section_container">
-          {widthofscreen > 576 ? (
-            <img src={photo} className="image_section"></img>
-          ) : null}{" "}
+    <a href="https://www.linkedin.com/in/pritam-muli/" target="_blank">
+            <img src={photo} className="image_section" title="https://www.linkedin.com/in/pritam-muli/" alt="" onClick={() => {navigate("https://www.linkedin.com/in/pritam-muli/")}}></img>
+    </a>
+   
         </div>
       </div>
       <About />

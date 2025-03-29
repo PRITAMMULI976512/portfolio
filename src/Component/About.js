@@ -25,10 +25,8 @@ function About() {
   return (
     <>
       <div className="row">
-        <div className="col-lg-4 col-md-4 col-sm-4">
-          <img src={photo} className="profile_photo" alt="" />
-        </div>
-        <div className="col-lg-8 col-md-8 col-sm-8">
+    
+        <div className="col-lg-12">
           <h1 className="about">About</h1>
           <h6 className="description">
             With over 3 years of experience working in Tata Consultancy
@@ -42,19 +40,19 @@ function About() {
 
           <div className="row mt-4">
             <div
-              className="col-lg-2 col-md-3 col-sm-4 col-4 skills_tab"
+              className="col-lg-2 col-md-3 col-sm-6 col-12 skills_tab"
               onClick={showSkills}
             >
               Skills
             </div>
             <div
-              className="col-lg-2 col-md-3 col-sm-4 col-4 skills_tab"
+              className="col-lg-2 col-md-3 col-sm-6 col-12 skills_tab"
               onClick={showExperince}
             >
               Experience
             </div>{" "}
             <div
-              className="col-lg-2 col-md-3 col-sm-4 col-4 skills_tab"
+              className="col-lg-2 col-md-3 col-sm-6 col-12 skills_tab"
               onClick={showEducation}
             >
               Education
@@ -80,55 +78,104 @@ function About() {
             {experience == true ? (
               <div className="experience_section">
                 <h6 className="skills_heading mt-3">
-                  Assistant System Engineer | Tata Consultancy Services                  (Dec-2021 - present) <br />
-                </h6> <hr /><hr />
+                  System Engineer | Tata Consultancy Services
+                  (Dec-2021 - present) <br />
+                </h6>{" "}
+                <hr />
+                <hr />
                 <p className="skills_description">
-
                   <details>
                     <summary>
                       {" "}
-                      MERN Stack Developer (Dec 2023 - Present)
+                      React Native Developer (Dec 2024 - Present)
                     </summary>
 
                     <ul>
                       <li>
-                        Proficient in MERN Stack, including MongoDB and SQL
-                        databases.{" "}
+                        Developed cross-platform mobile applications using React
+                        Native, ensuring a seamless experience on both iOS and
+                        Android.
                       </li>{" "}
                       <li>
-                        Skilled API implementation using JavaScript and adept at
-                        utilizing CSS frameworks for design consistency.
+                        Optimized app performance with lazy loading, code
+                        splitting, and efficient state management using Redux
+                        and context API.
                       </li>
                       <li>
-                        Extensive experience in version control with GitHub and
-                        creating reusable components in ReactJS.{" "}
+                        Debugged and optimized mobile applications using
+                        Flipper, React DevTools, and performance profiling
+                        techniques.
                       </li>{" "}
-                      <li>Uses AWS for deployment purpose.</li>
                     </ul>
-                  </details> <hr />
+                  </details>{" "}
+                  <hr />
                   <details>
                     <summary>
-                      Internet of Things Digital Engineering | Front-end
-                      developer - ReactJS (Dec 2021 - Dec 2023)
+                      MERN Stack Developer (May 2024 - Nov 2024)
                     </summary>
                     <ul>
                       <li>
-                        Developed user-friendly interfaces for a banking web
-                        application using React and JavaScript.
+                        Developed full-stack web applications using MERN stack,
+                        ensuring scalability and efficiency.
                       </li>
                       <li>
-                        Integrated APIs and optimized UI/UX for enhanced
-                        performance.
+                        Built and optimized RESTful APIs for seamless
+                        frontend-backend communication.
                       </li>{" "}
                       <li>
-                        Collaborated with teams to deliver improvements on time.
+                        Implemented authentication & authorization using JWT and
+                        Firebase for security.
+                      </li>{" "}
+                    </ul>
+                  </details>{" "}
+                  <hr />
+                  <details>
+                    <summary>React Developer (feb 2023 - Apr 2024)</summary>
+                    <ul>
+                      <li>
+                        Developed interactive web applications using ReactJS,
+                        leveraging reusable components and React Hooks for state
+                        management.
+                      </li>
+
+                      <li>
+                        Optimized performance with lazy loading, code splitting,
+                        and memoization for efficient rendering.
+                      </li>
+
+                      <li>
+                        Utilized Firebase for hosting and real-time database.
+                      </li>
+
+                      <li>Managed code with Git/GitHub</li>
+                    </ul>
+                  </details>{" "}
+                  <hr />
+                  <details>
+                    <summary>
+                      Internet of Things Digital Engineering | Front-end
+                      developer ( Feb 2022 - Feb 2023)
+                    </summary>
+                    <ul>
+                      <li>
+                        Built reusable UI components with Bootstrap, Tailwind
+                        CSS, and media
+                      </li>
+                      <li>
+                        Developed responsive web applications using HTML, CSS,
+                        and JavaScript, ensuring cross-device compatibility.
                       </li>{" "}
                       <li>
-                        Proficient in using firebase for deploying and managing
-                        CRUD application.
+                        Built reusable UI components with Bootstrap, Tailwind
+                        CSS, and media queries for a consistent design.
+                      </li>{" "}
+                      <li>
+                        Optimized performance with ES6+ features, improving load
+                        times and accessibility.
                       </li>
                     </ul>
-                  </details>
+                  </details>{" "}
+                  <hr />
                 </p>
               </div>
             ) : null}

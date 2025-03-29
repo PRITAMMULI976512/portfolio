@@ -1,14 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import photo from "./images/photo.webp";
 
 function NAvbsr() {
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg border-body"
+        className="navbar navbar-expand-lg border-body navbar-fixed"
         data-bs-theme="dark"
       >
         <div className="container-fluid">
+          <a
+            class="navbar-brand"
+            href="https://www.linkedin.com/in/pritam-muli-92985a204/"
+            target="_blank"
+            title="Know more"
+          >
+            <img src={photo} className="logo-image" alt="" />
+          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -29,10 +38,10 @@ function NAvbsr() {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/projects">
-                   Projects
+                  Projects
                 </Link>
               </li>
-       
+
               <li className="nav-item">
                 <Link className="nav-link" aria-disabled="true" to="/resume">
                   Resume

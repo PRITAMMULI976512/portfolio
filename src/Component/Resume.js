@@ -4,32 +4,48 @@ import photo from "./images/photo.webp";
 import EditLocationIcon from "@mui/icons-material/EditLocation";
 import CallIcon from "@mui/icons-material/Call";
 import AttachEmailIcon from "@mui/icons-material/AttachEmail";
- 
+
 function Resume() {
   return (
     <>
       <NAvbsr />
       <div className="resume_intro">
         <div className="row">
-          <div className="col-lg-4 col-md-4 col-sm-4 col-4 resume_profile_photo_component">
+          {/* <div className="col-lg-4 col-md-4 col-sm-4 col-4 resume_profile_photo_component">
             <img src={photo} alt="" className="resume_profile_photo" />
-          </div>
-          {/* <div className="col-lg-1"></div> */}
-          <div className="col-lg-8 col-md-8 col-sm-8 col-8">
-            <h1 className="profile_name">PRITAM MULI</h1>
+          </div> */}
+          <div className="col-lg-12 col-md-8 col-sm-8 col-8">
+            <h1 className="profile_name text-center">PRITAM MULI</h1>
             <div className="row">
-              <div className="col-lg-6 col-md-6 col-sm-12 mb-3">
-              <a href="tel: +91 9765129019" title="Contact us" className="maillink"> <CallIcon className="contact_icons" />+91 9765129019</a>
+
+             
+              <div className="col-lg-4  text-center col-md-6 col-sm-12 col-12">
+                <a
+                  href="tel: +91 9765129019"
+                  title="Contact us"
+                  className="maillink"
+                >
+                  {" "}
+                  <CallIcon className="contact_icons" />
+                  +91 9765129019
+                </a>
               </div>
-              <div className="col-lg-6  col-md-6 col-sm-12">
+              <div className="col-lg-4 text-center col-md-6 col-sm-12 col-12">
                 <EditLocationIcon className="contact_icons" /> Garakheda parisar
                 Sambhaji nagar
               </div>
-              <div className="col-lg-6 col-md-6 col-sm-12">
+              <div className="col-lg-4 text-center col-md-6 col-sm-12 col-12">
                 <AttachEmailIcon className="contact_icons" />{" "}
-                <a href="mailto:muli.pritam@gmail.com" className="maillink" title="Contact tjrough mail">muli.pritam@gmail.com </a>   
+                <a
+                  href="mailto:mulipritam1@gmail.com"
+                  className="maillink"
+                  title="Contact through mail"
+                >
+                  mulipritam1@gmail.com
+                </a>
               </div>
-            </div>
+              </div>
+            
           </div>{" "}
         </div>
 
@@ -43,7 +59,7 @@ function Resume() {
           <div className="col-lg-1 col-md-1 col-sm-1 col-1"></div>
           <div className="col-lg-6 col-md-6 col-sm-6 col-6">
             <p className="profile_summary">
-              With over 2.5 years of experience working in Tata Consultancy
+              With over 3 years of experience working in Tata Consultancy
               Services, I am a skilled front-end developer proficient in HTML,
               CSS, ReactJS, JavaScript, React Native, and Redux. I have a strong
               understanding of version control systems like GitHub and project
@@ -61,48 +77,80 @@ function Resume() {
           <div className="col-lg-1 col-md-1 col-sm-1 col-1"></div>
           <div className="col-lg-6 col-md-6 col-sm-6 col-6">
             <h5>
-              Assistant System Engineer | Tata Consultancy Services | Dec-2021 -
-              present
+              System Engineer | Tata Consultancy Services | Dec-2021 - present
             </h5>
-            {/* <p className="profile_summary">
-            Internet of Things Digital Engineering | Front-end developer - ReactJS
-            </p>   */}
-
             <span className="profile_summary">
-              Internet of Things Digital Engineering | Front-end developer -
-              ReactJS
+              React Native developer (Dec 2024 - Present)
               <ul>
                 <li>
-                  Developed and maintained user interface for web applications,
-                  ensuring optimal performance and responsiveness.
+                  Developed cross-platform mobile applications using React
+                  Native, ensuring a seamless experience on both iOS and
+                  Android.
+                </li>{" "}
+                <li>
+                  Optimized app performance with lazy loading, code splitting,
+                  and efficient state management using Redux and context API.
                 </li>
                 <li>
-                  Collaborated with backend developers and designers to
-                  implement visual elements and user interactions.
+                  Debugged and optimized mobile applications using Flipper,
+                  React DevTools, and performance profiling techniques.
+                </li>{" "}
+              </ul>
+            </span>{" "}
+            <span className="profile_summary">
+              MERN Stack Developer (May 2024 - Nov 2024)
+              <ul>
+                <li>
+                  Developed full-stack web applications using MERN stack,
+                  ensuring scalability and efficiency.
                 </li>
                 <li>
-                  Utilized React.js to create reusable components, enhancing
-                  code maintainability and scalability.
+                  Built and optimized RESTful APIs for seamless frontend-backend
+                  communication.
+                </li>{" "}
+                <li>
+                  Implemented authentication & authorization using JWT and
+                  Firebase for security.
+                </li>{" "}
+              </ul>
+            </span>
+            <span className="profile_summary">
+              react developer (feb 2023 - Apr 2024)
+              <ul>
+                <li>
+                  Developed interactive web applications using ReactJS,
+                  leveraging reusable components and React Hooks for state
+                  management.
+                </li>
+
+                <li>
+                  Optimized performance with lazy loading, code splitting, and
+                  memoization for efficient rendering.
+                </li>
+
+                <li>Utilized Firebase for hosting and real-time database.</li>
+
+                <li>Managed code with Git/GitHub</li>
+              </ul>
+            </span>
+            <span className="profile_summary">
+              Front-end developer (feb 2022 - feb 2023)
+              <ul>
+                <li>
+                  Built reusable UI components with Bootstrap, Tailwind CSS, and
+                  media queries
                 </li>
                 <li>
-                  Implemented responsive design principle to ensure a seamless
-                  user experience across various devices
+                  Developed responsive web applications using HTML, CSS, and
+                  JavaScript, ensuring cross-device compatibility.
                 </li>
                 <li>
-                  Collaborated with UI/UX designers to implement design
-                  specifications and enhance user experience.
+                  Built reusable UI components with Bootstrap, Tailwind CSS, and
+                  media queries for a consistent design.
                 </li>
                 <li>
-                  Integrated third party APIs to extend application
-                  functionality and improve overall performance.{" "}
-                </li>
-                <li>
-                  Participated in agile development processes, including sprint
-                  planning and daily stand-up meetings
-                </li>
-                <li>
-                  Resolve cross-browser compatibility issue and optimized web
-                  applications for speed and performance.
+                  Optimized performance with ES6+ features, improving load times
+                  and accessibility.
                 </li>
               </ul>
             </span>
@@ -159,11 +207,13 @@ function Resume() {
             <p className="profile_summary">Mongodb, Firebse, Sql</p>
 
             <h5>Others Skills</h5>
-            <p className="profile_summary">Responsive Design, Performance optimization, UI/Ux design Principle</p>
+            <p className="profile_summary">
+              Responsive Design, Performance optimization, UI/Ux design
+              Principle
+            </p>
           </div>
         </div>
 
-        
         <div className="row mb-3">
           {" "}
           <div className="col-lg-5 col-md-5 col-sm-5 col-5 profile_intro">
@@ -171,15 +221,11 @@ function Resume() {
           </div>
           <div className="col-lg-1 col-md-1 col-sm-1 col-1"></div>
           <div className="col-lg-6 col-md-6 col-sm-6 col-6">
-
-            <h5>Complete SQL Programming</h5>
-            <p className="profile_summary">Udemy (12/2023 - 01/2024)</p>
-
-            <h5>JavaScript bootcamp</h5>
-            <p className="profile_summary">Udemy (06/2023 - 07/2024)</p>
+            <h5>Build Strong MERN Stack Foundation</h5>
+            <p className="profile_summary">Simpli learn (03/2025)</p>
           </div>
         </div>
-      </div>      
+      </div>
     </>
   );
 }
