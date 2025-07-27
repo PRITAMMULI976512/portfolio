@@ -25,7 +25,6 @@ function About() {
   return (
     <>
       <div className="row">
-    
         <div className="col-lg-12">
           <h1 className="about">About</h1>
           <h6 className="description">
@@ -78,8 +77,8 @@ function About() {
             {experience == true ? (
               <div className="experience_section">
                 <h6 className="skills_heading mt-3">
-                  System Engineer | Tata Consultancy Services
-                  (Dec-2021 - present) <br />
+                  System Engineer | Tata Consultancy Services (Dec-2021 -
+                  present) <br />
                 </h6>{" "}
                 <hr />
                 <hr />
@@ -87,7 +86,7 @@ function About() {
                   <details>
                     <summary>
                       {" "}
-                      React Native Developer (Dec 2024 - Present)
+                      React Native Developer (May 2024 - Present)
                     </summary>
 
                     <ul>
@@ -110,26 +109,6 @@ function About() {
                   </details>{" "}
                   <hr />
                   <details>
-                    <summary>
-                      MERN Stack Developer (May 2024 - Nov 2024)
-                    </summary>
-                    <ul>
-                      <li>
-                        Developed full-stack web applications using MERN stack,
-                        ensuring scalability and efficiency.
-                      </li>
-                      <li>
-                        Built and optimized RESTful APIs for seamless
-                        frontend-backend communication.
-                      </li>{" "}
-                      <li>
-                        Implemented authentication & authorization using JWT and
-                        Firebase for security.
-                      </li>{" "}
-                    </ul>
-                  </details>{" "}
-                  <hr />
-                  <details>
                     <summary>React Developer (feb 2023 - Apr 2024)</summary>
                     <ul>
                       <li>
@@ -146,7 +125,16 @@ function About() {
                       <li>
                         Utilized Firebase for hosting and real-time database.
                       </li>
+                      <li>
+                        Increased employee event engagement by 60% through
+                        real-time registration and notifications module.
+                      </li>
 
+                      <li>
+                        Reduced page load time by 35% with optimized React and
+                        Redux architecture. Improved data consistency across
+                        sessions with persistent local storage implementation
+                      </li>
                       <li>Managed code with Git/GitHub</li>
                     </ul>
                   </details>{" "}

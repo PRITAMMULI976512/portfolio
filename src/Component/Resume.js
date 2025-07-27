@@ -17,8 +17,6 @@ function Resume() {
           <div className="col-lg-12 col-md-8 col-sm-8 col-8">
             <h1 className="profile_name text-center">PRITAM MULI</h1>
             <div className="row">
-
-             
               <div className="col-lg-4  text-center col-md-6 col-sm-12 col-12">
                 <a
                   href="tel: +91 9765129019"
@@ -44,8 +42,7 @@ function Resume() {
                   mulipritam1@gmail.com
                 </a>
               </div>
-              </div>
-            
+            </div>
           </div>{" "}
         </div>
 
@@ -80,7 +77,7 @@ function Resume() {
               System Engineer | Tata Consultancy Services | Dec-2021 - present
             </h5>
             <span className="profile_summary">
-              React Native developer (Dec 2024 - Present)
+              React Native developer (Apr 2024 - Present)
               <ul>
                 <li>
                   Developed cross-platform mobile applications using React
@@ -98,24 +95,8 @@ function Resume() {
               </ul>
             </span>{" "}
             <span className="profile_summary">
-              MERN Stack Developer (May 2024 - Nov 2024)
-              <ul>
-                <li>
-                  Developed full-stack web applications using MERN stack,
-                  ensuring scalability and efficiency.
-                </li>
-                <li>
-                  Built and optimized RESTful APIs for seamless frontend-backend
-                  communication.
-                </li>{" "}
-                <li>
-                  Implemented authentication & authorization using JWT and
-                  Firebase for security.
-                </li>{" "}
-              </ul>
-            </span>
-            <span className="profile_summary">
               react developer (feb 2023 - Apr 2024)
+              <summary>React Developer (feb 2023 - Apr 2024)</summary>
               <ul>
                 <li>
                   Developed interactive web applications using ReactJS,
@@ -129,7 +110,16 @@ function Resume() {
                 </li>
 
                 <li>Utilized Firebase for hosting and real-time database.</li>
+                <li>
+                  Increased employee event engagement by 60% through real-time
+                  registration and notifications module.
+                </li>
 
+                <li>
+                  Reduced page load time by 35% with optimized React and Redux
+                  architecture. Improved data consistency across sessions with
+                  persistent local storage implementation
+                </li>
                 <li>Managed code with Git/GitHub</li>
               </ul>
             </span>
