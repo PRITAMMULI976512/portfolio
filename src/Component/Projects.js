@@ -22,15 +22,15 @@ function Projects() {
         <div className="col-lg-6">
           <h1 className="mt-3">Family Hotel Web App</h1>
           <Link to="https://familyhotel-85e24.web.app/" target="_blank">
-          <img
-            src={family}
-            className="ecommerse_image"
-            onClick={() => {
-              navigate("https://familyhotel-85e24.web.app/");
-            }}
-            alt=""
-          />          </Link>
-
+            <img
+              src={family}
+              className="ecommerse_image"
+              // onClick={() => {
+              //   navigate("https://familyhotel-85e24.web.app/");
+              // }}
+              alt=""
+            />{" "}
+          </Link>
         </div>
       </div>
     </>

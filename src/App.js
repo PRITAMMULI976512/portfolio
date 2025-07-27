@@ -5,13 +5,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Component/Home";
 import Projects from "./Component/Projects";
 import Resume from "./Component/Resume";
-import { useTranslation } from "react-i18next";
- 
+import Certification from "./Component/Certification";
+
 function App() {
-  const {t} = useTranslation()
   return (
     <>
-       <div className="appcontainer">
+      <div className="appcontainer">
         <div className="container">
           <Router>
             <Routes>
@@ -19,6 +18,7 @@ function App() {
               <Route exact path="*" element={<Home />} />
               <Route exact path="/" element={<Home />} />
               <Route exact path="/projects" element={<Projects />} />
+              <Route exact path="/certification" element={<Certification />} />
             </Routes>
           </Router>
         </div>

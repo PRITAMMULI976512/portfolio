@@ -47,6 +47,12 @@ function NAvbsr() {
                   Resume
                 </Link>
               </li>
+
+              <li className="nav-item">
+                <Link className="nav-link" aria-disabled="true" to="/certification">
+                  Certification
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

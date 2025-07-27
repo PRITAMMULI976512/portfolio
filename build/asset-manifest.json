@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.262896bf.css",
-    "main.js": "/static/js/main.93bd0ba2.js",
+    "main.css": "/static/css/main.170da6c9.css",
+    "main.js": "/static/js/main.f2a3e503.js",
+    "static/js/977.6d0105f5.chunk.js": "/static/js/977.6d0105f5.chunk.js",
+    "static/js/732.a5f04436.chunk.js": "/static/js/732.a5f04436.chunk.js",
     "static/js/453.c937a3a2.chunk.js": "/static/js/453.c937a3a2.chunk.js",
     "static/media/family.png": "/static/media/family.3152fa6c6d7dbd87255a.png",
+    "static/media/Full-Stack-Developer.png": "/static/media/Full-Stack-Developer.7d16d17de5ce73f5da54.png",
     "static/media/about_photo.webp": "/static/media/about_photo.dfdfae159c286860066e.webp",
     "static/media/photo.webp": "/static/media/photo.5b85e078e5da66fa4b0f.webp",
     "static/media/e-commersse.png": "/static/media/e-commersse.1430b19d44082a605749.png",
+    "static/media/MERN Stack Developer.png": "/static/media/MERN Stack Developer.a8d1591f9f64fc8c124e.png",
     "static/media/js.jpeg": "/static/media/js.017b50c89d23c2161255.jpeg",
     "static/media/git.jpeg": "/static/media/git.15bbcd946bc8bfbe5058.jpeg",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.262896bf.css.map": "/static/css/main.262896bf.css.map",
-    "main.93bd0ba2.js.map": "/static/js/main.93bd0ba2.js.map",
+    "main.170da6c9.css.map": "/static/css/main.170da6c9.css.map",
+    "main.f2a3e503.js.map": "/static/js/main.f2a3e503.js.map",
+    "732.a5f04436.chunk.js.map": "/static/js/732.a5f04436.chunk.js.map",
     "453.c937a3a2.chunk.js.map": "/static/js/453.c937a3a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.262896bf.css",
-    "static/js/main.93bd0ba2.js"
+    "static/css/main.170da6c9.css",
+    "static/js/main.f2a3e503.js"
   ]
 }

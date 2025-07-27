@@ -41,7 +41,7 @@ const navigate = useNavigate();
 
             <div className="col-lg-1 col-md-1 col-sm-1 col-1">
               <Link
-                to="https://github.com/PRITAMMULI9765"
+                to="https://github.com/PRITAMMULI976512"
                 target="_blank"
               >
                 <GitHubIcon className="contact_icons" />

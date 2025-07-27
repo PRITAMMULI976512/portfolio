@@ -203,18 +203,6 @@ function Resume() {
             </p>
           </div>
         </div>
-
-        <div className="row mb-3">
-          {" "}
-          <div className="col-lg-5 col-md-5 col-sm-5 col-5 profile_intro">
-            <h1>Certification</h1>
-          </div>
-          <div className="col-lg-1 col-md-1 col-sm-1 col-1"></div>
-          <div className="col-lg-6 col-md-6 col-sm-6 col-6">
-            <h5>Build Strong MERN Stack Foundation</h5>
-            <p className="profile_summary">Simpli learn (03/2025)</p>
-          </div>
-        </div>
       </div>
     </>
   );
