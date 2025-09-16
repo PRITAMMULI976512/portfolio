@@ -183,9 +183,8 @@
 }
 
 .skills_image {
-  min-height: 200px;
-  border-radius: 20px;
-  max-height: 200px;
+  min-height: 100px;
+  max-height: 100px;
 }
 .skills_card_title {
   color: #fff;

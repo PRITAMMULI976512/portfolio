@@ -28,33 +28,35 @@ function About() {
         <div className="col-lg-12">
           <h1 className="about">About</h1>
           <h6 className="description">
-            With over 3 years of experience working in Tata Consultancy
-            Services, I am a skilled front-end developer proficient in HTML,
-            CSS, ReactJS, JavaScript, React Native, and Redux. I have a strong
-            understanding of version control systems like GitHub and project
-            management tools like JIRA. My expertise lies in creating responsive
-            and interactive user interfaces that enhance the overall user
-            experience.
+            With over 3 years of experience, including my tenure at Tata
+            Consultancy Services and now at Synechron, I am a skilled front-end
+            developer proficient in HTML, CSS, ReactJS, JavaScript, React
+            Native, and Redux. I have a strong understanding of version control
+            systems like GitHub and project management tools like JIRA. My
+            expertise lies in building responsive and interactive user
+            interfaces that deliver seamless user experiences.
           </h6>
 
           <div className="row mt-4">
+            <div style={{ display: "flex" }}>
             <div
-              className="col-lg-2 col-md-3 col-sm-6 col-12 skills_tab"
+              className="skills_tab"
               onClick={showSkills}
             >
               Skills
             </div>
             <div
-              className="col-lg-2 col-md-3 col-sm-6 col-12 skills_tab"
+              className="skills_tab"
               onClick={showExperince}
             >
               Experience
             </div>{" "}
             <div
-              className="col-lg-2 col-md-3 col-sm-6 col-12 skills_tab"
+              className="skills_tab"
               onClick={showEducation}
             >
               Education
+            </div>
             </div>
             {skills == true ? (
               <div className="skills_section">
@@ -77,16 +79,19 @@ function About() {
             {experience == true ? (
               <div className="experience_section">
                 <h6 className="skills_heading mt-3">
-                  System Engineer | Tata Consultancy Services (Dec-2021 -
-                  present) <br />
+                  Assosiate - Technology | Synechron (Sep-2025 - Present) <br />
                 </h6>{" "}
-                <hr />
+                <hr /><hr />
+                   <h6 className="skills_heading mt-3">
+                  System Engineer | Tata Consultancy Services (Dec-2021 -
+                   August-2025) <br />
+                </h6> 
                 <hr />
                 <p className="skills_description">
                   <details>
                     <summary>
                       {" "}
-                      React Native Developer (May 2024 - Present)
+                      React Native Developer (Jan 2025 - Aug 2025)
                     </summary>
 
                     <ul>
@@ -109,7 +114,7 @@ function About() {
                   </details>{" "}
                   <hr />
                   <details>
-                    <summary>React Developer (feb 2023 - Apr 2024)</summary>
+                    <summary>React Developer (feb 2023 - Dec 2024)</summary>
                     <ul>
                       <li>
                         Developed interactive web applications using ReactJS,

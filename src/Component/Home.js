@@ -20,7 +20,7 @@ const navigate = useNavigate();
           My self
           <h1>PRITAM MULI</h1>
           <h5>
-            System engineer @ TCS | JavaScript | HTML | CSS | ReactJs | React
+            Associate @ Synechron | JavaScript | HTML | CSS | ReactJs | React
             Native | Jira | Git
           </h5>
           <div className="row">
