@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { createContext, useContext, useRef } from "react";
 import { Link } from "react-router-dom";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
@@ -6,40 +6,11 @@ import NAvbsr from "./NAvbsr";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import fullstackdeveloper from "./images/Full-Stack-Developer.png";
 import MERN from "./images/MERN Stack Developer.png";
+import ProjectContate from "./Context/ProjectContate";
 
 function Certification() {
-  const pdfRef = useRef();
-  const MERNref = useRef();
-
-  const handleDownloadMERNPDF = async () => {
-    const input = MERNref.current;
-
-    const canvas = await html2canvas(input, { scale: 2 });
-    const imgData = canvas.toDataURL("image/png");
-
-    const pdf = new jsPDF("p", "mm", "a4");
-    const imgProps = pdf.getImageProperties(imgData);
-    const pdfWidth = pdf.internal.pageSize.getWidth();
-    const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-
-    pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
-    pdf.save("Full_Stack_Developer_Certificate.pdf");
-  };
-  const handleDownloadPDF = async () => {
-    const input = pdfRef.current;
-
-    const canvas = await html2canvas(input, { scale: 2 });
-    const imgData = canvas.toDataURL("image/png");
-
-    const pdf = new jsPDF("p", "mm", "a4");
-    const imgProps = pdf.getImageProperties(imgData);
-    const pdfWidth = pdf.internal.pageSize.getWidth();
-    const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-
-    pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
-    pdf.save("MERN_Stack_Developer_Certificate.pdf");
-  };
-
+  const { pdfRef, MERNref, handleDownloadMERNPDF, handleDownloadPDF } =
+    useContext(ProjectContate);
   return (
     <>
       <NAvbsr />

@@ -1,31 +1,86 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import NAvbsr from "./NAvbsr";
-import photo from "./images/photo.webp";
 import EditLocationIcon from "@mui/icons-material/EditLocation";
 import CallIcon from "@mui/icons-material/Call";
 import AttachEmailIcon from "@mui/icons-material/AttachEmail";
+import { jsPDF } from "jspdf"; // newer import
+import html2canvas from "html2canvas";
+import ArrowCircleDownIcon from "@mui/icons-material/ArrowCircleDown";
+import { useContext } from "react";
+import ProjectContate from "./Context/ProjectContate";
 
 function Resume() {
+  const { handleDownload, pdfPassword, setPdfPassword, resumeRef } =
+    useContext(ProjectContate);
+
   return (
     <>
       <NAvbsr />
-      <div className="resume_intro">
+
+      {/* Password Input + Download Button */}
+      <div style={{ textAlign: "center", margin: "20px 0" }}>
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  placeholder="Set Your Password"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <input
+                  type="password"
+                  className="form-control"
+                  placeholder="Set PDF Password"
+                  value={pdfPassword}
+                  onChange={(e) => setPdfPassword(e.target.value)}
+                  style={{ marginBottom: "10px" }}
+                />
+
+                <div className="modal-footer">
+                  <button
+                    onClick={handleDownload}
+                    type="button"
+                    class="btn btn-outline-primary"
+                    style={{ marginTop: "10px", padding: "8px 16px" }}
+                  >
+                    Download Secure Resume
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="d-flex justify-content-end">
+        <ArrowCircleDownIcon
+          className="contact_icons"
+          style={{ marginRight: "20px", cursor: "pointer" }}
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        />
+      </div>
+
+      {/* Resume Content */}
+      <div className="resume_intro" ref={resumeRef}>
         <div className="row">
-          {/* <div className="col-lg-4 col-md-4 col-sm-4 col-4 resume_profile_photo_component">
-            <img src={photo} alt="" className="resume_profile_photo" />
-          </div> */}
           <div className="col-lg-12 col-md-8 col-sm-8 col-8">
             <h1 className="profile_name text-center">PRITAM MULI</h1>
             <div className="row">
-              <div className="col-lg-4  text-center col-md-6 col-sm-12 col-12">
-                <a
-                  href="tel: +91 9765129019"
-                  title="Contact us"
-                  className="maillink"
-                >
-                  {" "}
-                  <CallIcon className="contact_icons" />
-                  +91 9765129019
+              <div className="col-lg-4 text-center col-md-6 col-sm-12 col-12">
+                <a href="tel:+919765129019" className="maillink">
+                  <CallIcon className="contact_icons" /> +91 9765129019
                 </a>
               </div>
               <div className="col-lg-4 text-center col-md-6 col-sm-12 col-12">
@@ -43,11 +98,9 @@ function Resume() {
                 </a>
               </div>
             </div>
-          </div>{" "}
+          </div>
         </div>
-
         <div className="intro_finish"></div>
-
         <div className="row mb-3">
           <div className="col-lg-5 col-md-5 col-sm-5 col-5 profile_intro">
             <h1>Profile Summary</h1>
@@ -146,7 +199,6 @@ function Resume() {
             </span>
           </div>
         </div>
-
         <div className="row mb-3">
           {" "}
           <div className="col-lg-5 col-md-5 col-sm-5 col-5 profile_intro">
@@ -176,7 +228,6 @@ function Resume() {
             </p>
           </div>
         </div>
-
         <div className="row mb-3">
           {" "}
           <div className="col-lg-5 col-md-5 col-sm-5 col-5 profile_intro">
@@ -202,7 +253,7 @@ function Resume() {
               Principle
             </p>
           </div>
-        </div>
+        </div>{" "}
       </div>
     </>
   );

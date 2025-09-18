@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import NAvbsr from "./NAvbsr";
 import photo from "./images/photo.webp";
 import About from "./About";
@@ -6,9 +6,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { Link, useNavigate } from "react-router-dom";
+import ProjectContate from "./Context/ProjectContate";
 
 function Home() {
-  
  
 const navigate = useNavigate();
  
